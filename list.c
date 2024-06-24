@@ -59,10 +59,8 @@ void list_reduce(List *L) {
 void list_remove(List *L, int pos) {
     // Verificar se a posição é válida
     if (pos < 0 || pos >= L->n) {
-        printf("Posição %d inválida.\n", pos);
         return;
     }
-    printf("\nElemento %d removido\n", L->e[pos]);
     // Remover o elemento deslocando os subsequentes
     for (int i = pos; i < L->n - 1; i++) {
         L->e[i] = L->e[i + 1];
