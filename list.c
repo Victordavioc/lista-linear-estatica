@@ -69,8 +69,6 @@ void list_remove(List *L, int pos) {
     }
     // Reduzir o número de elementos
     L->n--;
-
-    // Reduzir o tamanho do array se necessário
 }
 
 
